@@ -1,0 +1,36 @@
+.wrap {
+    @include clearfix;
+    width: calc(100% - (120px * 2));
+    margin: 0 120px;
+} // wrap
+
+
+.button {
+    @include inline-middle;
+    padding: 8px 20px 5px 20px;
+    font-size: 19(rem);
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 1;
+    &:active {}
+    &:hover {}
+    &.green-button {
+        background-color: #27AE60;
+        border-radius: 3px;
+        font-weight: bold;
+        color: white;
+    } // &.green-button
+    &.white-button {} // &.white-button
+} // button
+
+.label {
+    @include inline-middle;
+    background-color: #1ABC9C;
+    color: white;
+    line-height: 1;
+    padding: 2px 6px;
+    border-radius: 2px;
+    &.small {
+        font-size: rem(12);
+    } // &.small
+} // .label

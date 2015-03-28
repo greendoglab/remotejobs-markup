@@ -1,0 +1,19 @@
+.site-footer {
+    margin-top: 20px;
+    text-align: center;
+    .social {
+        border-bottom: 1px solid #8d8d8d;
+        padding-bottom: 10px;
+        a {
+            color: #8d8d8d;
+            height: 16px;
+            + a {
+                margin-left: 25px;
+            } // + a
+        } // a
+    } // social
+    p {
+        color: #464646;
+        font-size: 18(rem);
+    } // p
+} // site-footer

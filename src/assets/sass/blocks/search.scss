@@ -1,0 +1,25 @@
+.search {
+    margin-top: 40px;
+    .search-box {
+        margin: 0 240px;
+        position: relative;
+        input[type="text"] {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 5px 20px;
+            padding-right: 40px;
+        } // input[type="text"]
+        .lupa {
+            position: absolute;
+            right: 3px;
+            top: 1px;
+            color: #6b6b6b;
+            &:before {
+                content: '\f002';
+                display: inline-block;
+                font: normal normal normal 18px/1 FontAwesome;
+                text-rendering: auto;
+            } // &:before
+        } // lupa
+    } // search-box
+} // search

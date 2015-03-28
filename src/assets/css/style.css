@@ -179,3 +179,29 @@ header .button-area {
   color: #464646;
   font-size: 18 rem;
 }
+
+.search {
+  margin-top: 40px;
+}
+.search .search-box {
+  margin: 0 240px;
+  position: relative;
+}
+.search .search-box input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 20px;
+  padding-right: 40px;
+}
+.search .search-box .lupa {
+  position: absolute;
+  right: 3px;
+  top: 1px;
+  color: #6b6b6b;
+}
+.search .search-box .lupa:before {
+  content: '\f002';
+  display: inline-block;
+  font: normal normal normal 18px/1 FontAwesome;
+  text-rendering: auto;
+}

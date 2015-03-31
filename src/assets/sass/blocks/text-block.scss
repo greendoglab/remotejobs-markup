@@ -1,0 +1,17 @@
+.text-block {
+    margin: 10px 0 50px 0;
+    .rubric {
+        margin-top: 50px;
+        font-weight: bold;
+        color: #464646;
+        text-align: center;
+    } // rubric
+    .happy-story {
+        padding: 20px;
+        a {
+            text-decoration: none;
+            color: #2980B9;
+            font-size: 20(rem);
+        } // a
+    } // happy-story
+} // text-block

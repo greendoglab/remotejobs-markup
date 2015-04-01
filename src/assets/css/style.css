@@ -86,4 +86,226 @@ a, a:focus, span {
   outline: none;
 }
 
-/*# sourceMappingURL=style.css.map */
+.wrap {
+  width: calc(100% - (120px * 2));
+  margin: 0 120px;
+}
+.wrap:before, .wrap:after {
+  display: table;
+  content: ' ';
+}
+.wrap:after {
+  clear: both;
+}
+
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 8px 20px 5px 20px;
+  font-size: 19 rem;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 1;
+}
+.button.green-button {
+  background-color: #27AE60;
+  border-radius: 3px;
+  font-weight: bold;
+  color: white;
+}
+
+.label {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #1ABC9C;
+  color: white;
+  line-height: 1;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+.label.small {
+  font-size: 0.75rem;
+}
+
+header {
+  background: #ededed;
+  width: 100%;
+  padding: 20px 0;
+}
+header .top-menu {
+  width: 80%;
+  float: left;
+}
+header .top-menu ul {
+  margin: 0;
+  padding: 0;
+}
+header .top-menu ul li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+header .top-menu ul li + li {
+  margin-left: 30px;
+}
+header .top-menu ul li a {
+  text-decoration: none;
+  font-size: 18 rem;
+  font-family: "Helvetica Neue";
+  color: #464646;
+}
+header .button-area {
+  width: 20%;
+  float: left;
+  text-align: right;
+}
+
+.site-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+.site-footer .social {
+  border-bottom: 1px solid #DADADA;
+  padding-bottom: 10px;
+}
+.site-footer .social a {
+  color: #8d8d8d;
+  height: 16px;
+}
+.site-footer .social a + a {
+  margin-left: 25px;
+}
+.site-footer p {
+  color: #464646;
+  font-size: 18 rem;
+}
+
+.search {
+  margin-top: 40px;
+}
+.search .search-box {
+  margin: 0 240px;
+  position: relative;
+}
+.search .search-box input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 20px;
+  padding-right: 40px;
+}
+.search .search-box .lupa {
+  position: absolute;
+  right: 3px;
+  top: 1px;
+  color: #6b6b6b;
+}
+.search .search-box .lupa:before {
+  content: '\f002';
+  display: inline-block;
+  font: normal normal normal 18px/1 FontAwesome;
+  text-rendering: auto;
+}
+
+.list-jobs .title-job {
+  margin: 25px 0;
+  padding: 0 20px;
+}
+.list-jobs .title-job:before, .list-jobs .title-job:after {
+  display: table;
+  content: ' ';
+}
+.list-jobs .title-job:after {
+  clear: both;
+}
+.list-jobs .title-job .title-box {
+  width: 80%;
+  float: left;
+}
+.list-jobs .title-job .title-box a {
+  display: inline-block;
+  vertical-align: middle;
+  color: #2980B9;
+  font-weight: bold;
+  font-size: 22 rem;
+  text-decoration: none;
+}
+.list-jobs .title-job .title-box .hours {
+  display: inline-block;
+  vertical-align: middle;
+}
+.list-jobs .title-job .count-box {
+  width: 20%;
+  float: left;
+  text-align: right;
+}
+.list-jobs ul {
+  margin: 0;
+  padding: 0;
+}
+.list-jobs ul li {
+  list-style: none;
+}
+.list-jobs ul li + li {
+  border-top: 1px solid #DADADA;
+}
+.list-jobs ul li .job {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 20px;
+}
+.list-jobs ul li .job:before, .list-jobs ul li .job:after {
+  display: table;
+  content: ' ';
+}
+.list-jobs ul li .job:after {
+  clear: both;
+}
+.list-jobs ul li .job .description {
+  width: 80%;
+  float: left;
+}
+.list-jobs ul li .job .description .label {
+  margin-right: 10px;
+}
+.list-jobs ul li .job .description .company-name {
+  font-size: 20 rem;
+  font-weight: bold;
+  color: black;
+  display: inline-block;
+  vertical-align: middle;
+}
+.list-jobs ul li .job .description .title {
+  display: inline-block;
+  vertical-align: middle;
+  color: #27AE60;
+}
+.list-jobs ul li .job .date {
+  width: 20%;
+  float: left;
+  text-align: right;
+  font-size: 16 rem;
+  color: black;
+}
+.list-jobs ul li .highlight {
+  background-color: #F1FAEA;
+}
+
+.text-block {
+  margin: 10px 0 50px 0;
+}
+.text-block .rubric {
+  margin-top: 50px;
+  font-weight: bold;
+  color: #464646;
+  text-align: center;
+}
+.text-block .happy-story {
+  padding: 20px;
+}
+.text-block .happy-story a {
+  text-decoration: none;
+  color: #2980B9;
+  font-size: 20 rem;
+}

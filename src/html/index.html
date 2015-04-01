@@ -24,5 +24,111 @@
 
 @@include('partials/header.html')
 
+<!-- search -->
+<section class="search">
+   <div class="wrap">
+       <nav class="search-box">
+           <input type="text" placeholder="Search: 'Front end', 'Django'">
+           <button class="lupa"></button>
+       </nav>
+   </div>
+</section>
+<!-- /search -->
+
+<!-- list-jobs -->
+<section class="list-jobs">
+    <div class="wrap">
+        <div class="title-job">
+            <div class="title-box">
+                <a href="#">Some category have 17 active jobs</a>
+                <span class="hours">less than 2 hours</span>
+            </div>
+            <div class="count-box">
+                <span>32 jobs</span>
+            </div>
+        </div>
+        <ul>
+            <!-- job -->
+            <li>
+                <a href="#" class="job">
+                    <div class="description">
+                        <div class="company-name">SPAM.com</div>
+                        <div class="title">UI/UX & Front end developer</div>
+                    </div>
+                    <div class="date">Mar 24</div>
+                </a>
+            </li>
+            <!-- /job -->
+            <li>
+                <a href="#" class="job highlight">
+                    <div class="description">
+                        <div class="company-name">Greendoglab.com</div>
+                        <div class="title">Front end developer</div>
+                    </div>
+                    <div class="date">Mar 24</div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="job">
+                    <div class="description">
+                        <div class="label">new</div>
+                        <div class="company-name">FirstBit Co!</div>
+                        <div class="title">RoR based front end ninja</div>
+                    </div>
+                    <div class="date">Mar 24</div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="job">
+                    <div class="description">
+                        <div class="company-name">Solar System online</div>
+                        <div class="title">Django warefare UI/UX/JS</div>
+                    </div>
+                    <div class="date">Mar 24</div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="job">
+                    <div class="description">
+                        <div class="company-name">Simple company</div>
+                        <div class="title">Coffeescript lover and funny guy!</div>
+                    </div>
+                    <div class="date">Mar 24</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- /list-jobs -->
+
+<!-- text-block -->
+<section class="text-block">
+    <div class="wrap">
+        <h1 class="rubric">Looking for remote Job?</h1>
+        <p>Nullam quis turpis molestie, fringilla ex id, molestie orci.
+        Phasellus mollis sit amet risus sit amet scelerisque.
+        Morbi volutpat tortor id ligula pretium, vel tristique turpis efficitur.
+        Sed rutrum ac urna eget venenatis. Donec ut pretium nisl.
+        Nullam sollicitudin ipsum ac pellentesque varius.
+        In vulputate convallis commodo. Donec eleifend neque vitae condimentum viverra.
+        Quisque laoreet metus a ligula bibendum semper.</p>
+
+        <!-- happy story -->
+        <h1 class="rubric">Success story</h1>
+        <div class="happy-story">
+            <div class="date">Mar 24</div>
+            <a href="#">Jeremy find job in magazilla.com. He works from Thai, and give awesome result!</a>
+        </div>
+        <div class="happy-story">
+            <div class="date">Mar 24</div>
+            <a href="#">Jeremy find job in magazilla.com. He works from Thai, and give awesome result!</a>
+        </div>
+        <!-- /happy story -->
+    </div>
+</section>
+<!-- /text-block -->
+
+@@include('partials/footer.html')
+
 </body>
 </html>

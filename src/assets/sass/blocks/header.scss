@@ -1,0 +1,28 @@
+header {
+    background: #ededed;
+    width: 100%;
+    padding: 20px 0;
+    .top-menu {
+        width: 80%;
+        float: left;
+        ul {
+            @include clear-list-inline;
+            li {
+                + li {
+                    margin-left: 30px;
+                } // + li
+                a {
+                    text-decoration: none;
+                    font-size: 18(rem);
+                    font-family: "Helvetica Neue";
+                    color: #464646;
+                } // a
+            } // li
+        } // ul
+    } // top-menu
+    .button-area {
+        width: 20%;
+        float: left;
+        text-align: right;
+    } // button-area
+} // header

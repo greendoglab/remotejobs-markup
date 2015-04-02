@@ -11,7 +11,5 @@ production
 
 
 # assets
-src/static/*
-!src/static/fonts
-
 src/assets/css
+src/static/*

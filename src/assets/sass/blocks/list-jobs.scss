@@ -6,6 +6,9 @@
         .title-box {
             width: 80%;
             float: left;
+            @include bp(xs) {
+                width: 100%;
+            } // xs
             a {
                 @include inline-middle;
                 color: #2980B9;
@@ -15,16 +18,24 @@
             } // a
             .hours {
                 @include inline-middle;
+                @include bp(xs) {
+                    width: 100%;
+                } // xs
             } // hours
         } // title-box
         .count-box {
             width: 20%;
             float: left;
             text-align: right;
+            @include bp(xs) {
+                width: 100%;
+                text-align: left;
+            } // xs
         } // count-box
     } // title-job
     ul {
         @include clear-list;
+        border-bottom: 1px solid #DADADA;
         li {
             + li {
                 border-top: 1px solid #DADADA;
@@ -41,12 +52,27 @@
                     float: left;
                     .label {
                         margin-right: 10px;
+                        @include bp(xs) {
+                            float: left;
+                        } // xs
                     } // label
+                    .date-mobile {
+                        display: none;
+                        @include bp(xs) {
+                            display: block;
+                            float: left;
+                            color: black;
+                        } // xs
+                    } // date-mobile
                     .company-name {
                         font-size: 20(rem);
                         font-weight: bold;
                         color: black;
                         @include inline-middle;
+                        @include bp(xs) {
+                            width: 100%;
+                            @include clearfix;
+                        } // xs
                     } // company-name
                     .title {
                         @include inline-middle;
@@ -59,6 +85,9 @@
                     text-align: right;
                     font-size: 16(rem);
                     color: black;
+                    @include bp(xs) {
+                        display: none;
+                    } // xs
                 } // date
             } // job
             .highlight {

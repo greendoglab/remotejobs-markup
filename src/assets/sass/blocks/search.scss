@@ -1,8 +1,14 @@
 .search {
     margin-top: 40px;
+    @include bp(xs) {
+        margin-top: 0;
+    } // xs
     .search-box {
         margin: 0 240px;
         position: relative;
+        @include bp(xs) {
+            margin: 0;
+        } // xs
         input[type="text"] {
             width: 100%;
             box-sizing: border-box;

@@ -97,6 +97,30 @@ a, a:focus, span {
 .wrap:after {
   clear: both;
 }
+@media (max-width: 480px) {
+  .wrap {
+    margin: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .wrap {
+    margin: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .wrap {
+    margin: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .wrap {
+    margin: 0;
+    width: 100%;
+  }
+}
 
 .button {
   display: inline-block;
@@ -132,9 +156,63 @@ header {
   width: 100%;
   padding: 20px 0;
 }
+@media (max-width: 480px) {
+  header .wrap {
+    margin: 0 20px;
+    width: calc(100% - 40px);
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  header .wrap {
+    margin: 0 20px;
+    width: calc(100% - 40px);
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  header .wrap {
+    margin: 0 20px;
+    width: calc(100% - 40px);
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  header .wrap {
+    margin: 0 20px;
+    width: calc(100% - 40px);
+  }
+}
 header .top-menu {
   width: 80%;
   float: left;
+}
+@media (max-width: 480px) {
+  header .top-menu {
+    width: 100%;
+    text-align: center;
+    clear: both;
+  }
+  header .top-menu:before {
+    content: '\f0c9';
+    display: inline-block;
+    font: normal normal normal 16px/1 FontAwesome;
+    text-rendering: auto;
+    color: #27AE60;
+    cursor: pointer;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  header .top-menu {
+    width: 100%;
+    text-align: center;
+    clear: both;
+  }
+  header .top-menu:before {
+    content: '\f0c9';
+    display: inline-block;
+    font: normal normal normal 16px/1 FontAwesome;
+    text-rendering: auto;
+    color: #27AE60;
+    cursor: pointer;
+  }
 }
 header .top-menu ul {
   margin: 0;
@@ -145,19 +223,55 @@ header .top-menu ul li {
   display: inline-block;
   vertical-align: middle;
 }
+@media (max-width: 480px) {
+  header .top-menu ul li {
+    display: block;
+    clear: both;
+    padding: 10px 0;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  header .top-menu ul li {
+    display: block;
+    clear: both;
+    padding: 10px 0;
+  }
+}
 header .top-menu ul li + li {
   margin-left: 30px;
 }
+@media (max-width: 480px) {
+  header .top-menu ul li + li {
+    margin-left: 0;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  header .top-menu ul li + li {
+    margin-left: 0;
+  }
+}
 header .top-menu ul li a {
   text-decoration: none;
-  font-size: 18 rem;
-  font-family: "Helvetica Neue";
   color: #464646;
 }
 header .button-area {
   width: 20%;
   float: left;
   text-align: right;
+}
+@media (max-width: 480px) {
+  header .button-area {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  header .button-area {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
 }
 
 .site-footer {
@@ -183,9 +297,29 @@ header .button-area {
 .search {
   margin-top: 40px;
 }
+@media (max-width: 480px) {
+  .search {
+    margin-top: 0;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .search {
+    margin-top: 0;
+  }
+}
 .search .search-box {
   margin: 0 240px;
   position: relative;
+}
+@media (max-width: 480px) {
+  .search .search-box {
+    margin: 0;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .search .search-box {
+    margin: 0;
+  }
 }
 .search .search-box input[type="text"] {
   width: 100%;
@@ -221,6 +355,16 @@ header .button-area {
   width: 80%;
   float: left;
 }
+@media (max-width: 480px) {
+  .list-jobs .title-job .title-box {
+    width: 100%;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .list-jobs .title-job .title-box {
+    width: 100%;
+  }
+}
 .list-jobs .title-job .title-box a {
   display: inline-block;
   vertical-align: middle;
@@ -233,14 +377,37 @@ header .button-area {
   display: inline-block;
   vertical-align: middle;
 }
+@media (max-width: 480px) {
+  .list-jobs .title-job .title-box .hours {
+    width: 100%;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .list-jobs .title-job .title-box .hours {
+    width: 100%;
+  }
+}
 .list-jobs .title-job .count-box {
   width: 20%;
   float: left;
   text-align: right;
 }
+@media (max-width: 480px) {
+  .list-jobs .title-job .count-box {
+    width: 100%;
+    text-align: left;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .list-jobs .title-job .count-box {
+    width: 100%;
+    text-align: left;
+  }
+}
 .list-jobs ul {
   margin: 0;
   padding: 0;
+  border-bottom: 1px solid #DADADA;
 }
 .list-jobs ul li {
   list-style: none;
@@ -269,12 +436,63 @@ header .button-area {
 .list-jobs ul li .job .description .label {
   margin-right: 10px;
 }
+@media (max-width: 480px) {
+  .list-jobs ul li .job .description .label {
+    float: left;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .list-jobs ul li .job .description .label {
+    float: left;
+  }
+}
+.list-jobs ul li .job .description .date-mobile {
+  display: none;
+}
+@media (max-width: 480px) {
+  .list-jobs ul li .job .description .date-mobile {
+    display: block;
+    float: left;
+    color: black;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .list-jobs ul li .job .description .date-mobile {
+    display: block;
+    float: left;
+    color: black;
+  }
+}
 .list-jobs ul li .job .description .company-name {
   font-size: 20 rem;
   font-weight: bold;
   color: black;
   display: inline-block;
   vertical-align: middle;
+}
+@media (max-width: 480px) {
+  .list-jobs ul li .job .description .company-name {
+    width: 100%;
+  }
+  .list-jobs ul li .job .description .company-name:before, .list-jobs ul li .job .description .company-name:after {
+    display: table;
+    content: ' ';
+  }
+  .list-jobs ul li .job .description .company-name:after {
+    clear: both;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .list-jobs ul li .job .description .company-name {
+    width: 100%;
+  }
+  .list-jobs ul li .job .description .company-name:before, .list-jobs ul li .job .description .company-name:after {
+    display: table;
+    content: ' ';
+  }
+  .list-jobs ul li .job .description .company-name:after {
+    clear: both;
+  }
 }
 .list-jobs ul li .job .description .title {
   display: inline-block;
@@ -288,12 +506,44 @@ header .button-area {
   font-size: 16 rem;
   color: black;
 }
+@media (max-width: 480px) {
+  .list-jobs ul li .job .date {
+    display: none;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .list-jobs ul li .job .date {
+    display: none;
+  }
+}
 .list-jobs ul li .highlight {
   background-color: #F1FAEA;
 }
 
 .text-block {
   margin: 10px 0 50px 0;
+}
+@media (max-width: 480px) {
+  .text-block {
+    display: none;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .text-block {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .text-block .wrap {
+    margin: 0 20px;
+    width: calc(100% - 40px);
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .text-block .wrap {
+    margin: 0 20px;
+    width: calc(100% - 40px);
+  }
 }
 .text-block .rubric {
   margin-top: 50px;

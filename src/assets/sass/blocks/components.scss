@@ -2,8 +2,19 @@
     @include clearfix;
     width: calc(100% - (120px * 2));
     margin: 0 120px;
+    @include bp(xs) {
+        margin: 0;
+        width: 100%;
+    } //xs
+    @include bp(sm) {
+        margin: 0;
+        width: 100%;
+    } // sm
+    @include bp(md) {
+        margin: 0;
+        width: 100%;
+        } // md
 } // wrap
-
 
 .button {
     @include inline-middle;

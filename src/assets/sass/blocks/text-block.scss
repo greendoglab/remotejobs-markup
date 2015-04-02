@@ -1,5 +1,18 @@
 .text-block {
     margin: 10px 0 50px 0;
+    @include bp(xs) {
+        display: none;
+    } // xs
+    .wrap {
+        @include bp(sm) {
+            margin: 0 20px;
+            width: calc(100% - 40px);
+        } // sm
+        @include bp(md) {
+            margin: 0 20px;
+            width: calc(100% - 40px);
+        } // md
+    } // wrap
     .rubric {
         margin-top: 50px;
         font-weight: bold;

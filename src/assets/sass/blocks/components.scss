@@ -31,7 +31,10 @@
         font-weight: bold;
         color: white;
     } // &.green-button
-    &.white-button {} // &.white-button
+    &.white-button {
+        text-decoration: underline;
+        color: #464646;
+    } // &.white-button
 } // button
 
 .label {

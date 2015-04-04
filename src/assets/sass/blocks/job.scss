@@ -12,6 +12,7 @@
             margin-left: 20px;
         } // sm
         @include bp(md) {
+            width: calc(100% - 50px);
             margin-left: 50px;
         } // md
         &:before {

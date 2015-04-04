@@ -2,9 +2,18 @@
     margin: 40px 0;
     .link {
         color: #464646;
-        width: 100%;
+        width: calc(100% - 20px);
         display: block;
         margin-bottom: 50px;
+        @include bp(xs) {
+            margin-left: 20px;
+        } // xs
+        @include bp(sm) {
+            margin-left: 20px;
+        } // sm
+        @include bp(md) {
+            margin-left: 50px;
+        } // md
         &:before {
             content: '\f053';
             display: inline-block;
@@ -15,6 +24,14 @@
     } // link
     .block {
         width: 50%;
+        @include bp(xs) {
+            width: 100%;
+            text-align: center;
+        } // xs
+        @include bp(sm) {
+            width: 100%;
+            text-align: center;
+        } // sm
     } // block
     .company {
         float: left;
@@ -22,22 +39,35 @@
             width: 40%;
             display: inline-block;
             float: left;
-            padding: 10px 50px;
             box-sizing: border-box;
+            @include bp(xs) {
+                width: 100%;
+            } // xs
+            @include bp(sm) {
+                width: 100%;
+            } // sm
             .logo {
                 width: 130px;
                 height: 70px;
                 background: url(/static/images/Logo4.png);
                 background-size: 100%;
+                margin: 0 auto;
             } // logo
         } // logo-box
         .info {
             width: 60%;
             display: inline-block;
+            @include bp(xs) {
+                width: 100%;
+                margin: 50px 0;
+            } // xs
+            @include bp(sm) {
+                width: 100%;
+                margin: 50px 0;
+            } // sm
             .name {
                 font-weight: bold;
             } // name
-            .address {}
             .site {
                 color: #2980B9;
                 a {
@@ -47,13 +77,24 @@
         } // info
     } // company
     .share-buttons {
-        //display: inline-block;
         float: right;
         .social {
             @include clear-list-inline;
             margin-top: 35px;
             li {
                 margin-right: 25px;
+                @include bp(xs) {
+                    display: block;
+                    background-color: #ededed;
+                    margin-right: 0;
+                    padding: 10px 0;
+                } // xs
+                @include bp(sm) {
+                    display: block;
+                    background-color: #ededed;
+                    margin-right: 0;
+                    padding: 10px 0;
+                } // sm
                 a{
                     text-decoration: none;
                     color: #464646;
@@ -67,9 +108,32 @@
     } // share-buttons
 } // top-block
 
+.text-block {
+    @include bp(xs) {
+        display: block;
+        margin: 0 20px;
+    } // xs
+    @include bp(sm) {
+        display: block;
+        margin: 0 20px;
+    } // sm
+} // text-block
+
 .buttons {
     .two-buttons {
         text-align: center;
         margin-bottom: 50px;
+        .button {
+            @include bp(xs) {
+                display: block;
+                width: 180px;
+                margin: 10px auto;
+            } // xs
+            @include bp(sm) {
+                display: block;
+                width: 180px;
+                margin: 10px auto;
+            } // sm
+        } // button
     } // two-buttons
 } // buttons

@@ -1,0 +1,136 @@
+.form {
+    .logo-area {
+        border: 1px dashed #979797;
+        width: 100%;
+        padding: 40px 0;
+        text-align: center;
+        color: #c7c7c7;
+        box-sizing: border-box;
+    } // logo-area
+    .highlight-box {
+        .question-box {
+            width: 60%;
+            display: block;
+            float: left;
+            text-align: left;
+            .question {
+                color: #5f5f5f;
+                font-weight: bold;
+                margin-bottom: 1em;
+            } // question
+        } // question-box
+        .picture {
+            background: url(/static/images/oval.png);
+            width: 150px;
+            height: 150px;
+            background-size: 100%;
+            float: right;
+            margin-right: 25px;
+        } // picture
+    } // highlight-box
+    .button {
+        clear: both;
+    } // button
+} // form
+
+.custom-checkbox {
+    float: left;
+    position: relative;
+    label {
+        @include inline-middle;
+        color: #5f5f5f;
+        font-weight: bold;
+        padding-left: 30px;
+        .price {
+            color: #27AD60;
+        } // price
+    } // label
+    input[type="checkbox"]:not(:checked),
+    input[type="checkbox"]:checked {
+        @include inline-middle;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    input[type="checkbox"]:not(:checked) + label,
+    input[type="checkbox"]:checked + label {
+        position: relative;
+        cursor: pointer;
+        @include inline-middle;
+    }
+    input[type="checkbox"] + label:before {
+        position: absolute;
+        top: 4px;
+        left: 0px;
+        @include inline-middle;
+        content: '';
+        width: 20px;
+        height: 20px;
+        background: #FFFFFF;
+        border: 1px solid #A6A6A6;
+        border-radius: 3px;
+    }
+    input[type="checkbox"]:checked + label:after {
+        position: absolute;
+        top: 9px;
+        left: 5px;
+        @include inline-middle;
+        content: '';
+        width: 12px;
+        height: 12px;
+        background: #27AD60;
+        border-radius: 3px;
+    }
+} // custom-checkbox
+
+.custom-radio {
+    float: left;
+    position: relative;
+    label {
+        @include inline-middle;
+        color: #5f5f5f;
+        font-weight: bold;
+        padding-left: 30px;
+        .price {
+            color: #27AD60;
+        } // price
+    } // label
+    input[type="radio"]:not(:checked),
+    input[type="radio"]:checked {
+        @include inline-middle;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    input[type="radio"]:not(:checked) + label,
+    input[type="radio"]:checked + label {
+        position: relative;
+        cursor: pointer;
+        @include inline-middle;
+    }
+    input[type="radio"] + label:before {
+        position: absolute;
+        top: 4px;
+        left: 0px;
+        @include inline-middle;
+        content: '';
+        width: 20px;
+        height: 20px;
+        background: #FFFFFF;
+        border: 1px solid #A6A6A6;
+        border-radius: 100%;
+    }
+    input[type="radio"]:checked + label:after {
+        position: absolute;
+        top: 9px;
+        left: 5px;
+        @include inline-middle;
+        content: '';
+        width: 12px;
+        height: 12px;
+        background: #27AD60;
+        border-radius: 100%;
+    }
+} // custom-radio

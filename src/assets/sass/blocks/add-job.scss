@@ -13,6 +13,11 @@
             display: block;
             float: left;
             text-align: left;
+            @include bp(xs) {
+                float: none;
+                text-align: center;
+                margin: 0 auto;
+            } // xs
             .question {
                 color: #5f5f5f;
                 font-weight: bold;
@@ -26,6 +31,10 @@
             background-size: 100%;
             float: right;
             margin-right: 25px;
+            @include bp(xs) {
+                float: none;
+                margin: 20px auto;
+            } // xs
         } // picture
     } // highlight-box
     .button {

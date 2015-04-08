@@ -1,5 +1,4 @@
 .form {
-    text-align: center;
     .wrap {
         width: calc(100% - (260px * 2));
         margin: 0 260px;
@@ -16,13 +15,38 @@
             margin: 0 20px;
         } // md
         form {
-            .form-title {
-                font-weight: bold;
-                margin: 0;
-            } // form-title
+            fieldset {
+                position: relative;
+                .form-title {
+                    font-weight: bold;
+                    margin: 0;
+                    text-align: center;
+                } // form-title
+                .check {
+                    position: absolute;
+                    right: 25px;
+                    top: 12px;
+                    color: #27AE60;
+                    &:before {
+                        content: '\f00c';
+                        display: inline-block;
+                        font: normal normal normal 18px/1 FontAwesome;
+                        text-rendering: auto;
+                    } // &:before
+                } // check
+                input.error {
+                    border: 1px solid #D0021B;
+                } // input.error
+                span.error {
+                    text-align: left;
+                    color: #D0021B;
+                    font-size: rem(16);
+                } // span.error
+            } // fieldset
             .button {
                 display: block;
                 margin: 30px auto;
+                text-align: center;
             } // button
         } // form
     } // wrap

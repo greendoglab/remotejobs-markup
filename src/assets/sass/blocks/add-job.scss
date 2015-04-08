@@ -1,4 +1,30 @@
 .form {
+    fieldset {
+        padding: 10px;
+        &.tags {
+            position: relative;
+            .auto-complete {
+                position: absolute;
+                box-sizing: border-box;
+                z-index: 3;
+                width: calc(100% - 20px);
+                ul {
+                    @include clear-list;
+                    color: #5f5f5f;
+                    border: 1px solid #DDDDDD;
+                    border-radius: 0 0 10px 10px;
+                    background-color: #F2FCF2;
+                    li {
+                        padding: 5px 20px;
+                        span {
+                            cursor: pointer;
+                            font-size: rem(18);
+                        } // span
+                    } // li
+                } // ul
+            } // auto-complete
+        } // tags
+    } // fieldset
     .logo-area {
         border: 1px dashed #979797;
         width: 100%;

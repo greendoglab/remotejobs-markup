@@ -1,0 +1,27 @@
+.tags {
+    text-align: center;
+    margin: 40px 0;
+    .title-tags {
+        font-weight: bold;
+        font-size: rem(20);
+    } // title-tags
+    .list-tags {
+        @include clear-list-inline;
+        li {
+            a {
+                font-size: rem(16);
+                color: black;
+                border: 1px solid #c7c7c7;
+                border-radius: 20px;
+                text-decoration: none;
+                padding: 5px 10px;
+                &:hover, &.active {
+                    text-decoration: none;
+                    background-color: #27AE60;
+                    color: white;
+                    border: 1px solid #27ae60;
+                } // &:hover, &.active
+            } // a
+        } // li
+    } // list-tags
+} // tags

@@ -1,0 +1,17 @@
+.search-tab {
+    margin-top: 40px;
+    text-align: center;
+    .tabs {
+        a {
+            color: #b7b7b7;
+            font-weight: bold;
+            text-decoration: none;
+            &.active {
+                color: black;
+            } // &.active
+        } // a
+        span {
+            color: #b7b7b7;
+        } // span
+    } // tabs
+} // search-tab

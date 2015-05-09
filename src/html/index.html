@@ -24,29 +24,43 @@
 
 @@include('partials/header.html')
 
-<!-- search -->
-<section class="search">
-   <div class="wrap">
-       <nav class="search-box">
-           <input type="text" placeholder="Search: 'Front end', 'Django'">
-           <button class="lupa"></button>
-       </nav>
-   </div>
+<!-- search-tab -->
+<section class="search-tab">
+    <div class="tabs">
+        <a href="">Search</a>
+        <span>or</span>
+        <a href="">Browse tags</a>
+    </div>
+    <div class="tabs-content">
+        <div class="box">
+            <!-- search -->
+            <section class="search">
+               <div class="wrap">
+                   <nav class="search-box">
+                       <input type="text" placeholder="Search: 'Front end', 'Django'">
+                       <button class="lupa"></button>
+                   </nav>
+               </div>
+            </section>
+            <!-- /search -->
+        </div>
+        <div class="box">
+            <!-- tags -->
+            <section class="tags">
+                <h3 class="title-tags">Technologies</h3>
+                <ul class="list-tags">
+                    <li><a href="#">QA</a></li>
+                    <li><a href="#">Ruby on Rails</a></li>
+                    <li><a href="#">Django</a></li>
+                    <li><a href="#">UI/UX</a></li>
+                    <li><a href="#">AngularJS</a></li>
+                </ul>
+            </section>
+            <!-- /tags -->
+        </div>
+    </div>
 </section>
-<!-- /search -->
-
-<!-- tags -->
-<section class="tags">
-    <h3 class="title-tags">Technologies</h3>
-    <ul class="list-tags">
-        <li><a href="#">QA</a></li>
-        <li><a href="#">Ruby on Rails</a></li>
-        <li><a href="#">Django</a></li>
-        <li><a href="#">UI/UX</a></li>
-        <li><a href="#">AngularJS</a></li>
-    </ul>
-</section>
-<!-- /tags -->
+<!-- /search-tab -->
 
 <!-- list-jobs -->
 <section class="list-jobs">

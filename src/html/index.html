@@ -24,43 +24,7 @@
 
 @@include('partials/header.html')
 
-<!-- search-tab -->
-<section class="search-tab">
-    <div class="tabs">
-        <a href="#search" data-role="tab-trigger">Search</a>
-        <span>or</span>
-        <a href="#browsetag" data-role="tab-trigger">Browse tags</a>
-    </div>
-    <div class="tabs-content">
-        <div class="box" id="search" data-role="tab">
-            <!-- search -->
-            <section class="search">
-               <div class="wrap">
-                   <nav class="search-box">
-                       <input type="text" placeholder="Search: 'Front end', 'Django'">
-                       <button class="lupa"></button>
-                   </nav>
-               </div>
-            </section>
-            <!-- /search -->
-        </div>
-        <div class="box" id="browsetag" data-role="tab">
-            <!-- tags -->
-            <section class="tags">
-                <h3 class="title-tags">Technologies</h3>
-                <ul class="list-tags">
-                    <li><a href="#">QA</a></li>
-                    <li><a href="#">Ruby on Rails</a></li>
-                    <li><a href="#">Django</a></li>
-                    <li><a href="#">UI/UX</a></li>
-                    <li><a href="#">AngularJS</a></li>
-                </ul>
-            </section>
-            <!-- /tags -->
-        </div>
-    </div>
-</section>
-<!-- /search-tab -->
+@@include('partials/search-or-tags.html')
 
 <!-- list-jobs -->
 <section class="list-jobs">
@@ -75,28 +39,10 @@
             </div>
         </div>
         <ul>
-            <!-- job -->
-            <li>
-                <a href="#" class="job">
-                    <div class="description">
-                        <div class="date-mobile">Mar 24</div>
-                        <div class="company-name">SPAM.com</div>
-                        <div class="title">UI/UX & Front end developer</div>
-                    </div>
-                    <div class="date">Mar 24</div>
-                </a>
-            </li>
-            <!-- /job -->
-            <li>
-                <a href="#" class="job highlight">
-                    <div class="description">
-                        <div class="date-mobile">Mar 24</div>
-                        <div class="company-name">Greendoglab.com</div>
-                        <div class="title">Front end developer</div>
-                    </div>
-                    <div class="date">Mar 24</div>
-                </a>
-            </li>
+            @@include('partials/job-in-list.html', {"title": "Tornado Programmer", "company": "Google"})
+            @@include('partials/job-in-list.html', {"title": "Python/Django Guru", "company": "Yahoo"})
+            @@include('partials/job-in-list.html', {"title": "Flask ninja", "company": "Greendoglab"})
+            @@include('partials/job-in-list.html', {"title": "Python hacker!", "company": "FLy.ua"})
             <li>
                 <a href="#" class="job">
                     <div class="description">
@@ -108,22 +54,35 @@
                     <div class="date">Mar 24</div>
                 </a>
             </li>
+        </ul>
+    </div>
+</section>
+<!-- /list-jobs -->
+
+<!-- list-jobs -->
+<section class="list-jobs">
+    <div class="wrap">
+        <div class="title-job">
+            <div class="title-box">
+                <a href="#">Some category have 17 active jobs</a>
+                <span class="hours">less than 2 hours</span>
+            </div>
+            <div class="count-box">
+                <span>32 jobs</span>
+            </div>
+        </div>
+        <ul>
+            @@include('partials/job-in-list.html', {"title": "Tornado Programmer", "company": "Google"})
+            @@include('partials/job-in-list.html', {"title": "Python/Django Guru", "company": "Yahoo"})
+            @@include('partials/job-in-list.html', {"title": "Flask ninja", "company": "Greendoglab"})
+            @@include('partials/job-in-list.html', {"title": "Python hacker!", "company": "FLy.ua"})
             <li>
                 <a href="#" class="job">
                     <div class="description">
+                        <div class="label">new</div>
                         <div class="date-mobile">Mar 24</div>
-                        <div class="company-name">Solar System online</div>
-                        <div class="title">Django warefare UI/UX/JS</div>
-                    </div>
-                    <div class="date">Mar 24</div>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="job">
-                    <div class="description">
-                        <div class="date-mobile">Mar 24</div>
-                        <div class="company-name">Simple company</div>
-                        <div class="title">Coffeescript lover and funny guy!</div>
+                        <div class="company-name">FirstBit Co!</div>
+                        <div class="title">RoR based front end ninja</div>
                     </div>
                     <div class="date">Mar 24</div>
                 </a>
@@ -144,18 +103,6 @@
         Nullam sollicitudin ipsum ac pellentesque varius.
         In vulputate convallis commodo. Donec eleifend neque vitae condimentum viverra.
         Quisque laoreet metus a ligula bibendum semper.</p>
-
-        <!-- happy story -->
-        <h1 class="rubric">Success story</h1>
-        <div class="happy-story">
-            <div class="date">Mar 24</div>
-            <a href="#">Jeremy find job in magazilla.com. He works from Thai, and give awesome result!</a>
-        </div>
-        <div class="happy-story">
-            <div class="date">Mar 24</div>
-            <a href="#">Jeremy find job in magazilla.com. He works from Thai, and give awesome result!</a>
-        </div>
-        <!-- /happy story -->
     </div>
 </section>
 <!-- /text-block -->

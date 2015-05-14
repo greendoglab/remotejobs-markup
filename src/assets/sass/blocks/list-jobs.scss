@@ -1,3 +1,7 @@
+.list-jobs + .list-jobs {
+    margin-top: 60px;
+} // .list-jobs + .list-jobs
+
 .list-jobs {
     .title-job {
         @include clearfix;

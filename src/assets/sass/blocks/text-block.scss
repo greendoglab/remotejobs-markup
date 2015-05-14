@@ -12,5 +12,11 @@
             margin: 0 20px;
             width: calc(100% - 40px);
         } // md
+        .job-title {
+            margin: 50px 0 40px 0;
+            font-weight: bold;
+            color: #464646;
+            text-align: center;
+        } // job-title
     } // wrap
 } // text-block

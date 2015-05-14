@@ -38,6 +38,7 @@ module.exports = function(grunt) {
             dist: {
                 src: [
                     'bower_components/jquery/dist/jquery.min.js',
+                    'bower_components/social-likes/src/social-likes.js',
                     'src/assets/js/scripts.js'
                 ],
                 dest: 'production/static/js/production.js',
@@ -86,6 +87,13 @@ module.exports = function(grunt) {
                         dest: 'production/static/css/',
                         filter: 'isFile'
                     },
+                    {
+                        expand: true,
+                        cwd: 'bower_components/social-likes',
+                        src: ['social-likes_flat.css'],
+                        dest: 'production/static/css/',
+                        filter: 'isFile'
+                    }
                 ],
             },
         },

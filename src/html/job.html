@@ -10,6 +10,7 @@
 <!-- Render -->
 <link rel="stylesheet" type="text/css" href="/static/css/normalize.css">
 <link rel="stylesheet" type="text/css" href="/static/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/static/css/social-likes_flat.css">
 <link rel="stylesheet" type="text/css" href="/static/css/style.css">
 <script src="/static/js/production.js"></script>
 
@@ -28,6 +29,7 @@
 <section class="job-top-line">
     <div class="wrap">
         <a class="link" href="#">back to all jobs</a>
+        <h1 class="rubric">Looking for remote Job?</h1>
         <div class="company block">
             <div class="logo-box">
                 <div class="logo"></div>
@@ -40,11 +42,13 @@
         </div>
         <div class="share-buttons block">
             <span>share this job:</span>
-            <ul class="social">
-                <li><a href="#"><i class="fa fa-twitter"></i>twitter</a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i>twitter</a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i>twitter</a></li>
-            </ul>
+            <div>
+                <div class="social-likes" data-url="joburl" data-title="jobtitle">
+                    <div class="facebook" title="Поделиться ссылкой на Фейсбуке">Facebook</div>
+                    <div class="twitter" data-via="remotejobstwitter" data-related="remotejobs" title="Поделиться ссылкой в Твиттере">Twitter</div>
+                    <div class="plusone" title="Поделиться ссылкой в Гугл-плюсе">Google+</div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -53,7 +57,6 @@
 <!-- text-block -->
 <section class="text-block">
     <div class="wrap">
-        <h1 class="rubric">Looking for remote Job?</h1>
         <p>Nullam quis turpis molestie, fringilla ex id, molestie orci.
         Phasellus mollis sit amet risus sit amet scelerisque.
         Morbi volutpat tortor id ligula pretium, vel tristique turpis efficitur.

@@ -122,8 +122,15 @@
 
 .apply-or-cancel {
     .buttons {
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-bottom: 50px;
+        > * {
+            + * {
+                margin-left: 10px;
+            }
+        }
         .button {
             @include bp(xs) {
                 display: block;
